@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="Program.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <span class="menu-icon">&#8285;&#8285;&#8285;</span>
+            <div class="dropdown-content" id="dropdown">
+                <input type="file" id="fileInput">
+                <button id="processButton">Processar Arquivo</button>
+            </div>
+        </div>
+        <script>
+            const menuIcon = document.querySelector('.menu-icon');
+            const dropdown = document.getElementById('dropdown');
+    
+            menuIcon.addEventListener('click', function() {
+                dropdown.classList.toggle('show');
+            });
+        </script>
+    </header>
+</div>
+    <div id="output"></div>
+</body>
+</html>
